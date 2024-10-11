@@ -1,0 +1,970 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1)' inline='true' name='federated.1pjdupn157vrcg1d9qy8z05psita' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1)' name='textscan.13yi3r91g3e4dc18x30c60dvix1a'>
+            <connection class='textscan' directory='C:/Users/nefer/OneDrive/Documentos/GitHub/Project-4-Predictors-of-Lung-Cancer/Resources' filename='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Incidence, US by State, All Races, Lung &amp; Bronchus (Both Sexes), 2017 - 20211' datatype='string' name='[Incidence, US by State, All Races, Lung &amp; Bronchus (Both Sexes), 2017 - 2021]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/nefer/AppData/Local/Temp/TableauTemp/#TableauTemp_0xzffgc1o1a3iz166n12e1swu6tj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/08/2024 09:11:42 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Incidence, US by State, All Races, Lung &amp; Bronchus (Both Sexes), 2017 - 2021</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incidence, US by State, All Races, Lung &amp; Bronchus (Both Sexes), 2017 - 2021]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incidence, US by State, All Races, Lung &amp; Bronchus (Both Sexes), 2017 - 2021</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv_7CB1BB2A93E14C1883C2241F3476981A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv_7CB1BB2A93E14C1883C2241F3476981A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F3</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv_7CB1BB2A93E14C1883C2241F3476981A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F4</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F4</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv_7CB1BB2A93E14C1883C2241F3476981A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F5</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv_7CB1BB2A93E14C1883C2241F3476981A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F6</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv_7CB1BB2A93E14C1883C2241F3476981A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv' id='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv_7CB1BB2A93E14C1883C2241F3476981A'>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1) (2)' inline='true' name='federated.19ujudv1jygce717d8wye10dn6xp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1)' name='textscan.148h3at0w4twix108igpv1r5j7q7'>
+            <connection class='textscan' directory='C:/Users/nefer/OneDrive/Documentos/GitHub/Project-4-Predictors-of-Lung-Cancer/Resources' filename='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021 (1).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+    <datasource caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021' inline='true' name='federated.1qyziah1qd3c9j1dpbiyv1fyoqnw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021' name='textscan.1626igq090x2az1dakmvp1v9o6tn'>
+            <connection class='textscan' directory='C:/Users/nefer/OneDrive/Documentos/GitHub/Project-4-Predictors-of-Lung-Cancer/Resources' filename='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1626igq090x2az1dakmvp1v9o6tn' name='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv' table='[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Area' ordinal='0' />
+            <column datatype='integer' name='State FIPS' ordinal='1' />
+            <column datatype='real' name='Age-Adjusted Rate per 100,000' ordinal='2' />
+            <column datatype='real' name='Lower CI' ordinal='3' />
+            <column datatype='real' name='Upper CI' ordinal='4' />
+            <column datatype='integer' name='Count' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1626igq090x2az1dakmvp1v9o6tn' name='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv' table='[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Area' ordinal='0' />
+            <column datatype='integer' name='State FIPS' ordinal='1' />
+            <column datatype='real' name='Age-Adjusted Rate per 100,000' ordinal='2' />
+            <column datatype='real' name='Lower CI' ordinal='3' />
+            <column datatype='real' name='Upper CI' ordinal='4' />
+            <column datatype='integer' name='Count' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State FIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State FIPS]</local-name>
+            <parent-name>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv]</parent-name>
+            <remote-alias>State FIPS</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age-Adjusted Rate per 100,000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age-Adjusted Rate per 100,000]</local-name>
+            <parent-name>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv]</parent-name>
+            <remote-alias>Age-Adjusted Rate per 100,000</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lower CI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lower CI]</local-name>
+            <parent-name>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv]</parent-name>
+            <remote-alias>Lower CI</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Upper CI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Upper CI]</local-name>
+            <parent-name>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv]</parent-name>
+            <remote-alias>Upper CI</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count]</local-name>
+            <parent-name>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv]</parent-name>
+            <remote-alias>Count</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Age-Adjusted Rate per 100,000]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Area]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Region' datatype='string' name='[Calculation_783907811677552640]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [State FIPS] IN (9, 23, 25, 33, 34, 36, 42, 44, 50) THEN &quot;Northeast&quot;&#13;&#10;ELSEIF [State FIPS] IN (17, 18, 19, 20, 26, 27, 29, 31, 38, 39, 46, 55) THEN &quot;Midwest&quot;&#13;&#10;ELSEIF [State FIPS] IN (1, 5, 10, 11, 12, 13, 21, 22, 28, 37, 40, 45, 47, 48, 51, 54) THEN &quot;South&quot;&#13;&#10;ELSEIF [State FIPS] IN (2, 4, 6, 8, 15, 16, 30, 32, 35, 41, 49, 53, 56) THEN &quot;West&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv' datatype='table' name='[__tableau_internal_object_id__].[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]' role='measure' type='quantitative' />
+      <column-instance column='[Age-Adjusted Rate per 100,000]' derivation='Sum' name='[sum:Age-Adjusted Rate per 100,000:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/nefer/AppData/Local/Temp/TableauTemp/#TableauTemp_1to87ws0088s3e166t7lg0ppsxlu.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/08/2024 11:24:04 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State FIPS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[State FIPS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State FIPS</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age-Adjusted Rate per 100,000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Age-Adjusted Rate per 100,000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age-Adjusted Rate per 100,000</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lower CI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lower CI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lower CI</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Upper CI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Upper CI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Upper CI</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Count</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[sum:Age-Adjusted Rate per 100,000:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>42.299999999999997</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>56.799999999999997</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>54.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>67.299999999999997</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2729.6999999999989</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>36.700000000000003</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>55.299999999999997</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>76.099999999999994</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>47.700000000000003</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>58.799999999999997</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>44.700000000000003</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>57.799999999999997</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>37.700000000000003</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>55.700000000000003</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>84.5</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>52.600000000000001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>63.299999999999997</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>15.1</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>54.299999999999997</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>68.099999999999994</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>51.299999999999997</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>61.100000000000001</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>39.200000000000003</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>55.899999999999999</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>49.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>59.299999999999997</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>49.100000000000001</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>60.100000000000001</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>52.200000000000003</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>62.600000000000001</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>53.5</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>64.299999999999997</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>44.899999999999999</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>58.299999999999997</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>39.799999999999997</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>56.600000000000001</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>24.899999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>54.399999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>68.200000000000003</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>50.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>60.799999999999997</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>46.200000000000003</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>58.399999999999999</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>32.700000000000003</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>54.700000000000003</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>68.900000000000006</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv' id='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B'>
+            <properties context=''>
+              <relation connection='textscan.1626igq090x2az1dakmvp1v9o6tn' name='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv' table='[Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Area' ordinal='0' />
+                  <column datatype='integer' name='State FIPS' ordinal='1' />
+                  <column datatype='real' name='Age-Adjusted Rate per 100,000' ordinal='2' />
+                  <column datatype='real' name='Lower CI' ordinal='3' />
+                  <column datatype='real' name='Upper CI' ordinal='4' />
+                  <column datatype='integer' name='Count' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021' name='federated.1qyziah1qd3c9j1dpbiyv1fyoqnw' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1qyziah1qd3c9j1dpbiyv1fyoqnw'>
+            <column datatype='real' name='[Age-Adjusted Rate per 100,000]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Area]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Area]' derivation='None' name='[none:Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Age-Adjusted Rate per 100,000]' derivation='Sum' name='[sum:Age-Adjusted Rate per 100,000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[Longitude (generated)]' field-type='quantitative' max='33936652.947141305' min='18025033.435000733' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[Latitude (generated)]' field-type='quantitative' max='11697068.798387518' min='1614970.7135611896' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+            <format attr='enabled' id='hillshade_highlight_bright' value='true' />
+            <format attr='enabled' id='hillshade_highlight_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_faint' value='true' />
+            <format attr='enabled' id='hillshade_shadow_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_dark' value='true' />
+            <format attr='enabled' id='hillshade_shadow_extreme' value='true' />
+            <format attr='enabled' id='Coastline' value='true' />
+            <format attr='enabled' id='tunnel-service-link-track-case' value='true' />
+            <format attr='enabled' id='tunnel-street_limited-case' value='true' />
+            <format attr='enabled' id='tunnel-street-case' value='true' />
+            <format attr='enabled' id='tunnel-secondary-tertiary-case' value='true' />
+            <format attr='enabled' id='tunnel-primary-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk_link-case' value='true' />
+            <format attr='enabled' id='tunnel-motorway_link-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk-case' value='true' />
+            <format attr='enabled' id='tunnel-motorway-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk_link' value='true' />
+            <format attr='enabled' id='tunnel-motorway_link' value='true' />
+            <format attr='enabled' id='tunnel-service-link-track' value='true' />
+            <format attr='enabled' id='tunnel-street_limited' value='true' />
+            <format attr='enabled' id='tunnel-street' value='true' />
+            <format attr='enabled' id='tunnel-tertiary' value='true' />
+            <format attr='enabled' id='tunnel-secondary' value='true' />
+            <format attr='enabled' id='tunnel-primary' value='true' />
+            <format attr='enabled' id='tunnel-trunk' value='true' />
+            <format attr='enabled' id='tunnel-motorway' value='true' />
+            <format attr='enabled' id='road-street-low' value='true' />
+            <format attr='enabled' id='road-street_limited-low' value='true' />
+            <format attr='enabled' id='road-pedestrian-case' value='true' />
+            <format attr='enabled' id='road-service-link-track-case' value='true' />
+            <format attr='enabled' id='road-street_limited-case' value='true' />
+            <format attr='enabled' id='road-street-case' value='true' />
+            <format attr='enabled' id='road-tertiary-case' value='true' />
+            <format attr='enabled' id='road-secondary-case' value='true' />
+            <format attr='enabled' id='road-primary-case' value='true' />
+            <format attr='enabled' id='road-motorway_link-case' value='true' />
+            <format attr='enabled' id='road-trunk_link-case' value='true' />
+            <format attr='enabled' id='road-trunk-case' value='true' />
+            <format attr='enabled' id='road-motorway-case' value='true' />
+            <format attr='enabled' id='road-trunk_link' value='true' />
+            <format attr='enabled' id='road-motorway_link' value='true' />
+            <format attr='enabled' id='road-path' value='true' />
+            <format attr='enabled' id='road-pedestrian' value='true' />
+            <format attr='enabled' id='road-polygon' value='true' />
+            <format attr='enabled' id='road-service-link-track' value='true' />
+            <format attr='enabled' id='road-street_limited' value='true' />
+            <format attr='enabled' id='road-street' value='true' />
+            <format attr='enabled' id='road-tertiary' value='true' />
+            <format attr='enabled' id='road-secondary' value='true' />
+            <format attr='enabled' id='road-primary' value='true' />
+            <format attr='enabled' id='road-trunk' value='true' />
+            <format attr='enabled' id='road-motorway' value='true' />
+            <format attr='enabled' id='road-rail' value='true' />
+            <format attr='enabled' id='road-rail-tracks' value='true' />
+            <format attr='enabled' id='bridge-street-low' value='true' />
+            <format attr='enabled' id='bridge-street_limited-low' value='true' />
+            <format attr='enabled' id='bridge-pedestrian-case' value='true' />
+            <format attr='enabled' id='bridge-service-link-track-case' value='true' />
+            <format attr='enabled' id='bridge-street_limited-case' value='true' />
+            <format attr='enabled' id='bridge-street-case' value='true' />
+            <format attr='enabled' id='bridge-tertiary-case' value='true' />
+            <format attr='enabled' id='bridge-secondary-case' value='true' />
+            <format attr='enabled' id='bridge-primary-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-case' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-case' value='true' />
+            <format attr='enabled' id='bridge-trunk-case' value='true' />
+            <format attr='enabled' id='bridge-motorway-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link' value='true' />
+            <format attr='enabled' id='bridge-motorway_link' value='true' />
+            <format attr='enabled' id='bridge-path' value='true' />
+            <format attr='enabled' id='bridge-pedestrian' value='true' />
+            <format attr='enabled' id='bridge-service-link-track' value='true' />
+            <format attr='enabled' id='bridge-street_limited' value='true' />
+            <format attr='enabled' id='bridge-street' value='true' />
+            <format attr='enabled' id='bridge-tertiary' value='true' />
+            <format attr='enabled' id='bridge-secondary' value='true' />
+            <format attr='enabled' id='bridge-primary' value='true' />
+            <format attr='enabled' id='bridge-trunk' value='true' />
+            <format attr='enabled' id='bridge-motorway' value='true' />
+            <format attr='enabled' id='bridge-rail' value='true' />
+            <format attr='enabled' id='bridge-rail-tracks' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-2-case' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-2-case' value='true' />
+            <format attr='enabled' id='bridge-trunk-2-case' value='true' />
+            <format attr='enabled' id='bridge-motorway-2-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-2' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-2' value='true' />
+            <format attr='enabled' id='bridge-trunk-2' value='true' />
+            <format attr='enabled' id='bridge-motorway-2' value='true' />
+            <format attr='enabled' id='road-shields-2-white' value='true' />
+            <format attr='enabled' id='road-shields-2-black' value='true' />
+            <format attr='enabled' id='road-shields-1-white' value='true' />
+            <format attr='enabled' id='road-shields-1-black' value='true' />
+            <format attr='enabled' id='road-label-small' value='true' />
+            <format attr='enabled' id='road-label-big' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-bg' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-dispute' value='true' />
+            <format attr='enabled' id='light-admin-0-label-5th-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-4th-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-3rd-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-2nd-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-1st-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-bg-sub' value='true' />
+            <format attr='enabled' id='light-admin-1-boundaries-supress-bg' value='true' />
+            <format attr='enabled' id='light-admin-1-boundaries-sm-parents-bg' value='true' />
+            <format attr='enabled' id='light-admin-1-boundaries-md-parents-bg' value='true' />
+            <format attr='enabled' id='light-admin-1-boundaries-lg-parents-bg' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-dispute-sub' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-sub' value='true' />
+            <format attr='enabled' id='light-admin-1-boundaries-supress' value='true' />
+            <format attr='enabled' id='light-admin-1-boundaries-sm-parents' value='true' />
+            <format attr='enabled' id='light-admin-1-boundaries-md-parents' value='true' />
+            <format attr='enabled' id='light-admin-1-boundaries-lg-parents' value='true' />
+            <format attr='enabled' id='light-admin1-water-lines-usa-tableau' value='true' />
+            <format attr='enabled' id='light-9-dash-line-casing' value='true' />
+            <format attr='enabled' id='light-9-dash-line' value='true' />
+            <format attr='enabled' id='light-admin-1-label-9th-tier' value='true' />
+            <format attr='enabled' id='light-admin-1-label-8th-tier' value='true' />
+            <format attr='enabled' id='light-admin-1-label-7th-tier' value='true' />
+            <format attr='enabled' id='light-admin-1-label-6th-tier' value='true' />
+            <format attr='enabled' id='light-admin-1-label-5th-tier' value='true' />
+            <format attr='enabled' id='light-admin-1-label-4th-tier' value='true' />
+            <format attr='enabled' id='light-admin-1-label-3rd-tier' value='true' />
+            <format attr='enabled' id='light-admin-1-label-2nd-tier' value='true' />
+            <format attr='enabled' id='light-admin-1-label-1st-tier' value='true' />
+            <format attr='enabled' id='light-us-admin-1-label-abbr-3rd-tier' value='true' />
+            <format attr='enabled' id='light-us-admin-1-label-abbr-2nd-tier' value='true' />
+            <format attr='enabled' id='light-us-admin-1-label-abbr-1st-tier' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.98000001907348633' />
+            <format attr='map-style' value='light' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[none:Area:nk]' />
+              <color column='[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[sum:Age-Adjusted Rate per 100,000:qk]' />
+              <geometry column='[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[Latitude (generated)]</rows>
+        <cols>[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{DEF46611-4F51-42E8-B570-3F02DC5236D2}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[sum:Age-Adjusted Rate per 100,000:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pjdupn157vrcg1d9qy8z05psita].[:Measure Names]</field>
+            <field>[federated.1pjdupn157vrcg1d9qy8z05psita].[none:Incidence, US by State, All Races, Lung &amp; Bronchus (Both Sexes), 2017 - 2021:nk]</field>
+            <field>[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[__tableau_internal_object_id__].[cnt:Incidence_US_by_State_All_Races_Lung_&amp;_Bronchus_(Both_Sexes)_2017_-_2021.csv_E3EA3B967D4C4EBFB5F5B4F2E0812E9B:ok]</field>
+            <field>[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[none:Age-Adjusted Rate per 100,000:ok]</field>
+            <field>[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[none:Area:nk]</field>
+            <field>[federated.1qyziah1qd3c9j1dpbiyv1fyoqnw].[none:Calculation_783907811677552640:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{635B6C61-41F4-46F3-A661-27F3471361BA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
